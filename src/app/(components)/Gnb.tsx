@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Gnb() {
   return (
-    <nav className="w-[1920px] px-4 py-2 flex justify-between text-white">
+    <nav className="w-full max-w-[1920px] px-4 py-2 flex justify-between text-white">
       <Link href={"/"} className="flex items-center gap-2">
         <Image
           src={"/header/icn-ggdggd-main.svg"}
