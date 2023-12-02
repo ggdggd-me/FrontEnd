@@ -6,7 +6,7 @@ export default function Gnb() {
     <nav className="w-full max-w-[1920px] px-4 py-2 flex justify-between text-white">
       <Link href={"/"} className="flex items-center gap-2">
         <Image
-          src={"/header/icn-ggdggd-main.svg"}
+          src={"/assets/header/icn-ggdggd-main.svg"}
           width={36}
           height={36}
           alt="꿋꿋 로고"
