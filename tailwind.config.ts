@@ -36,12 +36,12 @@ const config: Config = {
       },
       keyframes: {
         modalOpen: {
-          "0%": { transform: "translateY(600px)" },
+          "0%": { transform: "translateY(100%)" },
           "100%": { transform: "translateY(0)" },
         },
         modalClose: {
           "0%": { transform: "translateY(0)" },
-          "100%": { transform: "translateY(600px)" },
+          "100%": { transform: "translateY(100%)" },
         },
       },
     },
