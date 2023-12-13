@@ -1,7 +1,13 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { useContext } from "react";
+import { ModalContext } from "@/Context/ModalContext";
 
 export default function Gnb() {
+  const { openModal } = useContext(ModalContext);
+
   return (
     <nav className="w-full max-w-[1920px] px-4 py-2 flex justify-between text-white">
       <Link href={"/"} className="flex items-center gap-2">
@@ -21,13 +27,16 @@ export default function Gnb() {
           <Link href={"/"}>공지사항</Link>
         </li>
         <li>
-          <Link href={"/"}>문의하기</Link>
+          <Link href={"/review"}>문의하기</Link>
         </li>
         <li>
           <Link href={"/"}>팀 소개</Link>
         </li>
         <li>
-          <button className="text-white bg-[#242D41] px-5 py-2 rounded-full hover:bg-[#61697A]">
+          <button
+            className="text-white bg-[#242D41] px-5 py-2 rounded-full hover:bg-[#61697A]"
+            onClick={openModal}
+          >
             앱 다운로드
           </button>
         </li>

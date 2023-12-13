@@ -1,8 +1,10 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import Provider from "./Provider";
 import localFont from "next/font/local";
 import Header from "./(components)/Header";
 import Footer from "./(components)/Footer";
+import DownloadModal from "./(components)/DownloadModal";
+import type { Metadata } from "next";
 
 export const Pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",
@@ -21,9 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={Pretendard.className}>
-        <Header />
-        {children}
-        <Footer />
+        <Provider>
+          <Header />
+          {children}
+          <DownloadModal />
+          <Footer />
+        </Provider>
       </body>
     </html>
   );
