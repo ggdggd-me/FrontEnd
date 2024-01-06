@@ -32,13 +32,29 @@ export default function Footer() {
         <div className="flex flex-col gap-[24px] ml-[10px] mt-[12px]">
           <ul className="flex gap-[12px]">
             <li>
-              <Link href="">문의하기 ↗</Link>
+              <Link href={"/review"}>문의하기 ↗</Link>
             </li>
             <li>
-              <Link href="">팀소개 ↗</Link>
+              <Link
+                href={
+                  "https://github.com/DeveloperAcademy-POSTECH/MC3-Team10-CenterWatch"
+                }
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                팀소개 ↗
+              </Link>
             </li>
             <li>
-              <Link href="">개인정보처리방침 ↗</Link>
+              <Link
+                href={
+                  "https://lateral-donkey-cf6.notion.site/f0ab47f2691a4a85b978999174b0a4b6?pvs=4"
+                }
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                개인정보처리방침 ↗
+              </Link>
             </li>
           </ul>
           <p>

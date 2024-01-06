@@ -30,7 +30,15 @@ export default function Gnb() {
           <Link href={"/review"}>문의하기</Link>
         </li>
         <li>
-          <Link href={"/"}>팀 소개</Link>
+          <Link
+            href={
+              "https://github.com/DeveloperAcademy-POSTECH/MC3-Team10-CenterWatch"
+            }
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            팀 소개
+          </Link>
         </li>
         <li>
           <button
