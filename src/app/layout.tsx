@@ -13,9 +13,6 @@ export const Pretendard = localFont({
 export const metadata: Metadata = {
   title: "꿋꿋",
   description: "IT 현대인들의 초간단 바른자세 알리미",
-  icons: {
-    icon: "/assets/favicon/favicon.svg",
-  },
 };
 
 export default function RootLayout({
