@@ -71,7 +71,7 @@ export default function Footer() {
                 className="w-[36px] h-[36px] rounded-full bg-[#6B7684]/[70%] hover:bg-[#6B7684]"
                 key={key.id}
               >
-                <Link href={key.link}>
+                <Link href={key.link} rel="noopener noreferrer" target="_blank">
                   <Image src={key.imgSrc} width={36} height={36} alt={key.id} />
                 </Link>
               </li>
