@@ -7,14 +7,13 @@ import { mockup } from "./mockupdata";
 
 export default function ReviewList() {
   const { data } = useGetReviews();
-  console.log(data);
 
   return (
     <ul className="w-[1060px] flex flex-wrap gap-[20px]">
       <li>
         <ReviewRegister />
       </li>
-      {mockup.map((data, index) => (
+      {data?.map((data, index) => (
         <li key={index}>
           <ReviewItem data={data} />
         </li>
