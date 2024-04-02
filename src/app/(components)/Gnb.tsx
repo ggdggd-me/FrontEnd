@@ -20,14 +20,11 @@ export default function Gnb() {
         <span className="text-xl font-extrabold">꿋꿋</span>
       </Link>
       <ul className="flex gap-8 items-center">
-        {/* <li>
-          <Link href={"/"}>맞춤 모니터 높이 찾기</Link>
-        </li> */}
         <li>
-          <Link href={"/"}>공지사항</Link>
+          <Link href={"/qna"}>문의사항</Link>
         </li>
         <li>
-          <Link href={"/review"}>문의하기</Link>
+          <Link href={"/review"}>사용 후기</Link>
         </li>
         <li>
           <Link
