@@ -1,7 +1,7 @@
 "use client";
 
 import ModalWrapper from "@/components/ModalWrapper";
-import useCreateReview from "@/hooks/useCreateReviews";
+import useCreateReview from "@/hooks/useCreateReview";
 import { iReview } from "@/interface/interface";
 import { ChangeEvent, useState } from "react";
 
@@ -102,14 +102,18 @@ export default function ReviewForm({ setModalState }: Props) {
                   placeholder="서비스 이용 개월 수"
                   onChange={onFormChange}
                 />
-                <input
-                  className={`w-[180px] pl-[12px] ${inputStyle}`}
-                  type="select"
+                <select
+                  className={`w-[180px] px-[12px] ${inputStyle}`}
                   id="user"
                   name="job"
-                  placeholder="직업"
                   onChange={onFormChange}
-                />
+                >
+                  <option value={"직장인"}>직장인</option>
+                  <option value={"자영업"}>자영업</option>
+                  <option value={"학생"}>학생</option>
+                  <option value={"주부"}>주부</option>
+                  <option value={"기타"}>기타</option>
+                </select>
               </div>
             </div>
 
