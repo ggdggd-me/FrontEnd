@@ -19,7 +19,6 @@ export interface iQnaQuestion {
   title: string;
   questionDescription: string;
   consertPersonalInfo: boolean;
-  isPrivate: boolean;
   createdAt: Timestamp;
   modifiedAt: Timestamp;
 }
