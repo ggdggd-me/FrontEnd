@@ -7,7 +7,7 @@ export default function SectionFaq() {
         문의하고 싶은 내용이 있나요?
       </h2>
       <Link
-        href={"/qna"}
+        href={"/qna/register"}
         className="text-[26px] font-semibold rounded-full bg-blue600 text-white py-[30px] px-[140px]"
       >
         1:1 고객문의 바로가기
