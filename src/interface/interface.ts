@@ -19,6 +19,7 @@ export interface iQnaQuestion {
   title: string;
   questionDescription: string;
   consertPersonalInfo: boolean;
+  receiveAnswerByEmail: boolean;
   createdAt: Timestamp;
   modifiedAt: Timestamp;
 }
