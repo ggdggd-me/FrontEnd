@@ -14,6 +14,7 @@ const getInqueries = async () => {
       email: questionData.email,
       title: questionData.title,
       questionDescription: questionData.questionDescription,
+      receiveAnswerByEmail: questionData.receiveAnswerByEmail,
       consertPersonalInfo: questionData.consertPersonalInfo,
       createdAt: questionData.createdAt,
       modifiedAt: questionData.modifiedAt,
