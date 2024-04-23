@@ -76,7 +76,7 @@ export default function QnaForm() {
         <></>
       ) : (
         <div className="flex justify-center items-center">
-          <form className="flex flex-col bg-gray-100 p-[40px] gap-[48px]">
+          <form className="flex flex-col bg-gray-100 p-[40px] gap-[48px] rounded-[8px]">
             <div>
               <h2 className="font-extrabold text-[42px]">QnA</h2>
               <p className="text-[#767676]">
@@ -180,7 +180,7 @@ export default function QnaForm() {
             </div>
 
             <button
-              className="grow-0 px-[34px] py-[8px] bg-blue500 rounded-[4px] text-white"
+              className="px-[34px] py-[8px] bg-blue600 rounded-[4px] text-white ml-auto font-semibold"
               onClick={onSubmit}
             >
               제출 완료
