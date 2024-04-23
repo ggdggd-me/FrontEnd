@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ModalWrapper from "@/components/ModalWrapper";
 import { iQnaQuestion } from "../../../interface/interface";
 import getDateFromTimeStamp from "@/utils/getDateFromTimeStamp";
+import QnaItemDetail from "./QnaItemDetail";
 
 interface Props {
   question: iQnaQuestion;
@@ -29,10 +30,7 @@ export default function QnaItem({ question }: Props) {
       </article>
       {modal && (
         <ModalWrapper closeModal={changeModalState}>
-          <div>
-            <h2>{question.title}</h2>
-            <p>{question.questionDescription}</p>
-          </div>
+          <QnaItemDetail question={question} />
         </ModalWrapper>
       )}
     </>
